@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>react scroll event</title>
+  <script src="/build/example.js"></script>
+  <style>
+    html, body, main {
+      height: 100%;
+    }
+
+    main {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    content {
+      display: block;
+      height: 600px;
+      width: 300px;
+    }
+
+    content > div {
+      height: 100%;
+      overflow: scroll;
+    }
+
+    content > div > p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
+  </style>
+</head>
+<body onload="init()">
+  <main></main>
+</body>
+</html>
